@@ -1,89 +1,86 @@
-body {
+* {
+    box-sizing: border-box;
+}
+
+body, h1, p {
     margin: 0;
-    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
 }
 
-header {
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.header {
+    background-color: aquamarine;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    background: url('https://avatars.dzeninfra.ru/get-zen_doc/62191/pub_5f9456a646218d3c84d9f436_5f9456f1a81c50318e15f916/scale_1200') bottom no-repeat;
-    background-size: cover;
-}
-h1 {
-    color: #fff;
-    font-size: 4rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-footer {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    width: 100%;
+    height: 150px;
     text-align: center;
 }
 
-footer .links {
-    margin-bottom: 50px;
-}
-
-footer .links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1rem;
-    text-decoration: none;
+h1 {
+    font-size: 40px;
     text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
 }
 
-.copyright {
-    color: rgb(108, 117,125);
-    font-family:'Times New Roman', Times, serif;
+.navigate {
+    height: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-.news {
-    background-color: #fff;
-    padding: 50px 0 32px;
+.nav {
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
-article {
-    width: 768px;
-    margin: 0 auto 32px;
-    padding: 6px 15px;
-    border-bottom: 1px solid rgb(128, 128, 128);
+li {
+    display: flex;
 }
 
-article:nth-child(even) {
-    background: green;
-}
-
-.pelement::before {
-    content: "New";
-    color:blue;
-}
-
-article a {
-    color: rgb(33, 37, 41);
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-article a:hover {
-    color: #0085a1;
+li a:hover {
+    background-color: #660606;
+}  
+
+.content {
+    background-color: rgba(255, 225, 185, 0.5);
+    height: 660px;
+    display: flex;
 }
 
-article h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
+.list {
+    margin: 20px auto;
 }
 
-.article-meta {
-    color: rgb(134, 142, 150);
-    margin-bottom: 5px;
+.footer {
+    background-color: #7e7e7e;
+    color: #dbdbdb;
+    font-size: 11px;
+    margin: auto;
+    height: 87px;
+    display: flex;
 }
 
-article img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+.footer-copyright {
+    margin: auto;
+    font-size: 15px;
+}  

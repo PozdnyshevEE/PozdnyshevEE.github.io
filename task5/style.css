@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: flex;
+}
+
+.content {
+    background-color: rgba(255, 225, 185, 0.5);
+    margin: auto;
+    border: 1px solid;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transform: translateY(20px);
+}
+
+a:hover {
+    color: green;
+}
+
+#inputText {
+    height: 40px;
+}
+
+#consoleButton {
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+#consoleButton:hover {
+    color: black;
+    background-color: white;
+}
